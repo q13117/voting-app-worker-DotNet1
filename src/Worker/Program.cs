@@ -90,7 +90,7 @@ namespace Worker
                 }
             }
 
-            Console.Error.WriteLine("Connected to PostGreSQL db");
+            Console.Error.WriteLine("Connected to PostGreSQL 9.4 db");
 
             var command = connection.CreateCommand();
             command.CommandText = @"CREATE TABLE IF NOT EXISTS votes (
